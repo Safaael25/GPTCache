@@ -521,3 +521,4 @@ def get_model_and_last_content(data: Dict[str, Any], **_: Dict[str, Any]) -> str
     messages = data.get("messages", [])
     last = messages[-1]["content"] if messages else ""
     return f"{model}::{last}"
+
